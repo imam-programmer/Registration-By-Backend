@@ -160,12 +160,12 @@ const LoginPage = () => {
                             Remember me
                         </label>
 
-                        <a
-                            href="/forgot-password"
+                        <Link
+                            to="/forgot-password"
                             className="font-semibold text-cyan-400 transition hover:text-cyan-200 hover:underline"
                         >
                             Forgot Password?
-                        </a>
+                        </Link>
 
                     </div>
 
