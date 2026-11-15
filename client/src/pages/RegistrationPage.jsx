@@ -21,17 +21,17 @@ const RegistrationPage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try{
+        try {
             const data = await axios.post("http://localhost:5000/registration", formData)
             toast.success(data.data.message)
             setFormData({
-        name: "",
-        email: "",
-        password: "",
-        confirmPassword: "",
-    })
+                name: "",
+                email: "",
+                password: "",
+                confirmPassword: "",
+            })
 
-        }catch(error){
+        } catch (error) {
             toast.error(error.response.data.message)
         }
     };
